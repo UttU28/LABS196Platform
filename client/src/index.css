@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Main colors from the LABS196 color palette */
+    /* Primary Accent (Rocket/Highlight) - Bright Orange #FF4B22 */
+    /* Primary Text/Dark UI Elements - Deep Navy #1F2A3B */
+    /* Background Light Base - Off White / Soft Gray #F9F9F9 */
+    /* Accent Hover/Secondary Text - Medium Slate Blue #5C6B8A */
+
+    --background: 0 0% 98%; /* #F9F9F9 */
+    --foreground: 217 31% 18%; /* #1F2A3B */
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 219 20% 45%; /* #5C6B8A */
+
+    --popover: 0 0% 98%; /* #F9F9F9 */
+    --popover-foreground: 217 31% 18%; /* #1F2A3B */
+
+    --border: 220 20% 90%;
+    --input: 220 20% 90%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 217 31% 18%; /* #1F2A3B */
+
+    --primary: 14 100% 56%; /* #FF4B22 */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 219 20% 45%; /* #5C6B8A */
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 219 20% 45%; /* #5C6B8A */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --ring: 14 100% 56%; /* #FF4B22 */
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 217 31% 18%; /* #1F2A3B */
+    --foreground: 0 0% 98%; /* #F9F9F9 */
+
+    --muted: 223 21% 25%; 
+    --muted-foreground: 217 20% 65%;
+
+    --accent: 219 20% 45%; /* #5C6B8A */
+    --accent-foreground: 0 0% 98%; /* #F9F9F9 */
+
+    --popover: 217 31% 18%; /* #1F2A3B */
+    --popover-foreground: 0 0% 98%; /* #F9F9F9 */
+
+    --border: 223 21% 25%;
+    --input: 223 21% 25%;
+
+    --card: 217 31% 18%; /* #1F2A3B */
+    --card-foreground: 0 0% 98%; /* #F9F9F9 */
+
+    --primary: 14 100% 56%; /* #FF4B22 */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 219 20% 45%; /* #5C6B8A */
+    --secondary-foreground: 0 0% 98%; /* #F9F9F9 */
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%; /* #F9F9F9 */
+
+    --ring: 14 100% 56%; /* #FF4B22 */
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+  
+  .labs-orange {
+    @apply text-[#FF4B22];
+  }
+  
+  .labs-navy {
+    @apply text-[#1F2A3B];
+  }
+  
+  .labs-slate {
+    @apply text-[#5C6B8A];
+  }
+  
+  .bg-labs-orange {
+    @apply bg-[#FF4B22];
+  }
+  
+  .bg-labs-navy {
+    @apply bg-[#1F2A3B];
+  }
+  
+  .bg-labs-slate {
+    @apply bg-[#5C6B8A];
+  }
+  
+  .border-labs-orange {
+    @apply border-[#FF4B22];
+  }
+  
+  .border-labs-navy {
+    @apply border-[#1F2A3B];
+  }
+  
+  .border-labs-slate {
+    @apply border-[#5C6B8A];
+  }
+  
+  .hover-labs-orange:hover {
+    @apply text-[#FF4B22];
+  }
+  
+  .hover-bg-labs-orange:hover {
+    @apply bg-[#FF4B22];
+  }
+}
+
+/* Custom Carousel Styles */
+@layer components {
+  .carousel-nav-btn {
+    @apply absolute top-1/2 -translate-y-1/2 h-9 w-9 bg-black/20 hover:bg-black/40 border-none rounded-full text-white flex items-center justify-center text-2xl font-normal;
+  }
+
+  .carousel-previous {
+    @apply left-4;
+  }
+
+  .carousel-next {
+    @apply right-4;
+  }
+}
