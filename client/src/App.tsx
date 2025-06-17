@@ -8,9 +8,8 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Home from "@/pages/home";
 import AboutUs from "@/pages/about-us";
-import OurProjects from "@/pages/our-projects";
+import WhatWeDo from "@/pages/what-we-do";
 import Mentors from "@/pages/mentors";
-import Team from "@/pages/team";
 import Accelerator from "@/pages/programs/accelerator";
 import Investment from "@/pages/programs/investment";
 
@@ -19,9 +18,8 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/about-us" component={AboutUs} />
-      <Route path="/our-projects" component={OurProjects} />
+      <Route path="/what-we-do" component={WhatWeDo} />
       <Route path="/mentors" component={Mentors} />
-      <Route path="/team" component={Team} />
       <Route path="/programs/accelerator" component={Accelerator} />
       <Route path="/programs/investment" component={Investment} />
       <Route component={NotFound} />

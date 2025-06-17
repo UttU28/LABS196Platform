@@ -31,10 +31,8 @@ const navItems: NavItem[] = [
   //   ]
   // },
   { title: "About Us", href: "/about-us" },
-  { title: "Our Projects", href: "/our-projects" },
   { title: "Accelerator", href: "/programs/accelerator" },
   { title: "Mentors", href: "/mentors" },
-  { title: "Team", href: "/team" },
 ];
 
 const Navbar = () => {
