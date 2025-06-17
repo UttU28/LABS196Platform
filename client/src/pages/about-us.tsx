@@ -45,42 +45,75 @@ const AboutUs = () => {
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
-            className="text-center space-y-6"
+            className="text-center space-y-8"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl mb-8">
               About LABS196
             </h1>
-            <div className="mx-auto max-w-3xl space-y-4 text-xl">
-              <p>LABS196 is looking for the next unicorn founders!</p>
-              <p>LABS196 strives to unite the global startup ecosystem.</p>
-              <p>
-                LABS196 is launching a transformative technology accelerator for
-                it's portfolio companies to ensure optimal success.
-              </p>
+            
+            <div className="mx-auto max-w-4xl">
+              <motion.p 
+                className="text-2xl font-light leading-relaxed mb-8 text-gray-100"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.3, duration: 0.8 }}
+              >
+                Labs196 is a fully integrated ecosystem designed to support startups from inception to established companies.
+              </motion.p>
+              
+              <div className="grid md:grid-cols-2 gap-8 mt-12">
+                <motion.div 
+                  className="text-left space-y-4"
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.5, duration: 0.8 }}
+                >
+                  <div className="flex items-start space-x-3">
+                    <div className="flex-shrink-0 w-2 h-2 bg-labs-orange rounded-full mt-3"></div>
+                    <p className="text-lg text-gray-200 leading-relaxed">
+                      Since our founding in <span className="font-semibold text-white">2021</span>, entrepreneurs and experts from over <span className="font-semibold text-labs-orange">60 countries</span> have joined the Labs196 ecosystem.
+                    </p>
+                  </div>
+                </motion.div>
+                
+                <motion.div 
+                  className="text-left space-y-4"
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.7, duration: 0.8 }}
+                >
+                  <div className="flex items-start space-x-3">
+                    <div className="flex-shrink-0 w-2 h-2 bg-labs-orange rounded-full mt-3"></div>
+                    <p className="text-lg text-gray-200 leading-relaxed">
+                      We focus on <span className="font-semibold text-white">AI and Blockchain</span> technology startups, with more than <span className="font-semibold text-labs-orange">50 startups</span> participating in our global competitions.
+                    </p>
+                  </div>
+                </motion.div>
+              </div>
             </div>
           </motion.div>
         </div>
       </section>
 
       {/* Our Approach Section - What We Do */}
-      <section className="py-16 sm:py-24">
+      <section className="py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
-            className="text-center mb-12"
+            className="text-center mb-16"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
           >
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-6">
               What We Do
             </h2>
-            <p className="mt-4 text-xl text-muted-foreground max-w-3xl mx-auto">
-              At LABS196, we've developed a comprehensive framework to support
-              startups at every stage of their journey
+            <div className="w-24 h-1 bg-labs-orange mx-auto mb-8"></div>
+            <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+              Labs196 has assembled outstanding founders, formed cross-functional teams, brought on mentors, and made qualified investments to create a cohesive environment for AI and Blockchain startups.
             </p>
           </motion.div>
 
@@ -121,8 +154,21 @@ const AboutUs = () => {
       </section>
 
       {/* Core Values Section */}
-      <section className="py-16 sm:py-24">
+      <section className="py-20 sm:py-28 bg-muted/30">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+          >
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-6">
+              Our Foundation
+            </h2>
+            <div className="w-24 h-1 bg-labs-orange mx-auto mb-8"></div>
+          </motion.div>
+          
           <motion.div
             className="grid grid-cols-1 gap-8 md:grid-cols-3"
             variants={containerVariants}
@@ -132,54 +178,45 @@ const AboutUs = () => {
           >
             {/* Vision Card */}
             <motion.div variants={itemVariants}>
-              <Card className="h-full p-8 transition-all hover:shadow-lg">
-                <div className="mb-4 rounded-full bg-labs-orange/10 p-3 w-12 h-12 flex items-center justify-center">
-                  <i className="ri-eye-line text-2xl text-labs-orange"></i>
+              <Card className="h-full p-8 transition-all hover:shadow-lg hover:scale-105 border-0 shadow-md">
+                <div className="mb-6 rounded-full bg-labs-orange/10 p-4 w-16 h-16 flex items-center justify-center">
+                  <i className="ri-eye-line text-3xl text-labs-orange"></i>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 dark:text-white">
+                <h3 className="text-2xl font-bold mb-6 dark:text-white text-labs-navy">
                   Vision
                 </h3>
-                <p className="text-muted-foreground">
-                  LABS196 in collaboration with EDGE196 and our global partners
-                  is creating a unique solution to the accelerator landscape.
-                  Our global presence and collaborative atmosphere drives
-                  lasting success for our participants.
+                <p className="text-muted-foreground leading-relaxed">
+                  We act as a synergist between startups, investors, and service providers. We open new opportunities to a marketplace in a cross-border ecosystem. We maximize digital asset value through the Labs196 syndication economy.
                 </p>
               </Card>
             </motion.div>
 
             {/* Mission Card */}
             <motion.div variants={itemVariants}>
-              <Card className="h-full p-8 transition-all hover:shadow-lg">
-                <div className="mb-4 rounded-full bg-labs-orange/10 p-3 w-12 h-12 flex items-center justify-center">
-                  <i className="ri-flag-line text-2xl text-labs-orange"></i>
+              <Card className="h-full p-8 transition-all hover:shadow-lg hover:scale-105 border-0 shadow-md">
+                <div className="mb-6 rounded-full bg-labs-orange/10 p-4 w-16 h-16 flex items-center justify-center">
+                  <i className="ri-flag-line text-3xl text-labs-orange"></i>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 dark:text-white">
+                <h3 className="text-2xl font-bold mb-6 dark:text-white text-labs-navy">
                   Mission
                 </h3>
-                <p className="text-muted-foreground">
-                  The mission at LABS196 is to find incredible founders and to
-                  support them in achieving their dreams with our global
-                  presence, expertise, and access to markets to support them
-                  throughout their lifecycle.
+                <p className="text-muted-foreground leading-relaxed">
+                  Our ultimate goal is to operate companies across the world. We believe a single successful startup can generate enough excitement and inspiration to motivate and energize an entire country's entrepreneurial spirit to produce economic prosperity.
                 </p>
               </Card>
             </motion.div>
 
             {/* Overview Card */}
             <motion.div variants={itemVariants}>
-              <Card className="h-full p-8 transition-all hover:shadow-lg">
-                <div className="mb-4 rounded-full bg-labs-orange/10 p-3 w-12 h-12 flex items-center justify-center">
-                  <i className="ri-compass-3-line text-2xl text-labs-orange"></i>
+              <Card className="h-full p-8 transition-all hover:shadow-lg hover:scale-105 border-0 shadow-md">
+                <div className="mb-6 rounded-full bg-labs-orange/10 p-4 w-16 h-16 flex items-center justify-center">
+                  <i className="ri-compass-3-line text-3xl text-labs-orange"></i>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 dark:text-white">
+                <h3 className="text-2xl font-bold mb-6 dark:text-white text-labs-navy">
                   Overview
                 </h3>
-                <p className="text-muted-foreground">
-                  LABS196 in coordination with FINIX196 delivers a comprehensive
-                  solution to founders as they build their companies and to
-                  investors looking for opportunities to support incredible
-                  innovations.
+                <p className="text-muted-foreground leading-relaxed">
+                  Our objective is to create a cohesive environment that transforms AI and Blockchain startups into successful businesses and enables them to reach their maximum potential through our marketplace. We invite you to join our mission.
                 </p>
               </Card>
             </motion.div>

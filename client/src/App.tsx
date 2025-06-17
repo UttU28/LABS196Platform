@@ -6,9 +6,9 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 import Home from "@/pages/home";
 import AboutUs from "@/pages/about-us";
-import WhatWeDo from "@/pages/what-we-do";
 import Mentors from "@/pages/mentors";
 import Accelerator from "@/pages/programs/accelerator";
 import Investment from "@/pages/programs/investment";
@@ -18,7 +18,6 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/about-us" component={AboutUs} />
-      <Route path="/what-we-do" component={WhatWeDo} />
       <Route path="/mentors" component={Mentors} />
       <Route path="/programs/accelerator" component={Accelerator} />
       <Route path="/programs/investment" component={Investment} />
@@ -31,6 +30,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
+        <ScrollToTop />
         <div className="flex min-h-screen flex-col">
           <Navbar />
           <main className="flex-1">
