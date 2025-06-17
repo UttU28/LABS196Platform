@@ -39,13 +39,13 @@ const Footer = () => {
               </li>
               <li>
                 <div className="flex justify-center space-x-4 text-muted-foreground mt-6">
-                  <a href="#" className="transition hover:text-labs-orange hover:bg-labs-navy/10 bg-muted p-2 rounded-full">
+                  <a href="https://www.linkedin.com/company/labs-196" className="transition hover:text-labs-orange hover:bg-labs-navy/10 bg-muted p-2 rounded-full">
                     <i className="ri-linkedin-fill text-2xl"></i>
                   </a>
-                  <a href="#" className="transition hover:text-labs-orange hover:bg-labs-navy/10 bg-muted p-2 rounded-full">
+                  <a href="https://x.com/labs196" className="transition hover:text-labs-orange hover:bg-labs-navy/10 bg-muted p-2 rounded-full">
                     <i className="ri-twitter-x-fill text-2xl"></i>
                   </a>
-                  <a href="#" className="transition hover:text-labs-orange hover:bg-labs-navy/10 bg-muted p-2 rounded-full">
+                  <a href="https://www.facebook.com/labs196/" className="transition hover:text-labs-orange hover:bg-labs-navy/10 bg-muted p-2 rounded-full">
                     <i className="ri-facebook-fill text-2xl"></i>
                   </a>
                   <a href="#" className="transition hover:text-labs-orange hover:bg-labs-navy/10 bg-muted p-2 rounded-full">

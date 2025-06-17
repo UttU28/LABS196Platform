@@ -31,7 +31,7 @@ const navItems: NavItem[] = [
   //   ]
   // },
   { title: "About Us", href: "/about-us" },
-  { title: "Accelerator", href: "/programs/accelerator" },
+  { title: "Programs", href: "/programs/accelerator" },
   { title: "Mentors", href: "/mentors" },
 ];
 
