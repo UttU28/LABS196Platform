@@ -148,8 +148,7 @@ const Home = () => {
           <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
             <p>
               Welcome to LABS196, headquartered in Sugar Land, Texas. We stand
-              as a beacon of innovation within the venture capital investment
-              landscape, committed to reshaping the trajectory of startups
+              as a beacon of innovation, committed to reshaping the trajectory of startups
               poised for exceptional growth, with a particular focus on
               blockchain and emerging technologies.
             </p>
