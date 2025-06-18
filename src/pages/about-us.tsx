@@ -129,11 +129,7 @@ const AboutUs = () => {
             </h2>
             <div className="w-24 h-1 bg-labs-orange mx-auto mb-8"></div>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              Labs196 has assembled outstanding founders, formed
-              cross-functional teams, brought on mentors, and made qualified
-              investments to create a cohesive environment for AI and Blockchain
-              startups. We're building the future of decentralized innovation
-              and intelligent systems.
+              Labs196 has assembled outstanding founders, cross-functional teams, and onboarded mentors to identify, develop, and commercialize cutting-edge technologies. 
             </p>
           </motion.div>
 
