@@ -53,19 +53,21 @@ const AboutUs = () => {
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl mb-8">
               About LABS196
             </h1>
-            
+
             <div className="mx-auto max-w-4xl">
-              <motion.p 
+              <motion.p
                 className="text-2xl font-light leading-relaxed mb-8 text-gray-100"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3, duration: 0.8 }}
               >
-                Labs196 is a fully integrated ecosystem designed to support startups from inception to established companies.
+                Labs196 is a fully integrated ecosystem designed to support
+                startups from inception to established companies, with a strong
+                emphasis on blockchain and AI technologies.
               </motion.p>
-              
+
               <div className="grid md:grid-cols-2 gap-8 mt-12">
-                <motion.div 
+                <motion.div
                   className="text-left space-y-4"
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
@@ -74,12 +76,18 @@ const AboutUs = () => {
                   <div className="flex items-start space-x-3">
                     <div className="flex-shrink-0 w-2 h-2 bg-labs-orange rounded-full mt-3"></div>
                     <p className="text-lg text-gray-200 leading-relaxed">
-                      Since our founding in <span className="font-semibold text-white">2021</span>, entrepreneurs and experts from over <span className="font-semibold text-labs-orange">60 countries</span> have joined the Labs196 ecosystem.
+                      Since our founding in{" "}
+                      <span className="font-semibold text-white">2021</span>,
+                      entrepreneurs and experts from{" "}
+                      <span className="font-semibold text-labs-orange">
+                        various countries
+                      </span>{" "}
+                      have joined the Labs196 ecosystem.
                     </p>
                   </div>
                 </motion.div>
-                
-                <motion.div 
+
+                <motion.div
                   className="text-left space-y-4"
                   initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0 }}
@@ -88,7 +96,15 @@ const AboutUs = () => {
                   <div className="flex items-start space-x-3">
                     <div className="flex-shrink-0 w-2 h-2 bg-labs-orange rounded-full mt-3"></div>
                     <p className="text-lg text-gray-200 leading-relaxed">
-                      We focus on <span className="font-semibold text-white">AI and Blockchain</span> technology startups, with more than <span className="font-semibold text-labs-orange">50 startups</span> participating in our global competitions.
+                      We focus on{" "}
+                      <span className="font-semibold text-white">
+                        AI and Blockchain
+                      </span>{" "}
+                      technology startups, with{" "}
+                      <span className="font-semibold text-labs-orange">
+                        multiple startups
+                      </span>{" "}
+                      participating in our global competitions.
                     </p>
                   </div>
                 </motion.div>
@@ -113,7 +129,11 @@ const AboutUs = () => {
             </h2>
             <div className="w-24 h-1 bg-labs-orange mx-auto mb-8"></div>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              Labs196 has assembled outstanding founders, formed cross-functional teams, brought on mentors, and made qualified investments to create a cohesive environment for AI and Blockchain startups.
+              Labs196 has assembled outstanding founders, formed
+              cross-functional teams, brought on mentors, and made qualified
+              investments to create a cohesive environment for AI and Blockchain
+              startups. We're building the future of decentralized innovation
+              and intelligent systems.
             </p>
           </motion.div>
 
@@ -127,12 +147,12 @@ const AboutUs = () => {
             <ApproachCard
               step="01"
               title="Source"
-              description="LABS196 leverages our global presence and partners to identity exciting ideas and impressive founders to maintain a pipeline of companies across the industry spectrum. Our diligent sourcing effort has allowed us to amass a rich portfolio of companies across eight Industry verticals."
+              description="LABS196 leverages our global presence and partners to identity exciting ideas and impressive founders to maintain a pipeline of companies across the industry spectrum. Our diligent sourcing effort has allowed us to amass a rich portfolio of companies across eight Industry verticals, with particular strength in blockchain and decentralized technologies."
             />
             <ApproachCard
               step="02"
               title="Incubate"
-              description="Our in-house and extemal mentors work side by side with the companies in our portfolio to help them as they navigate the stages of growth. A notincens ourselves, we understand the passion, joy and challenges of building a business from des to bunch."
+              description="Our in-house and extemal mentors work side by side with the companies in our portfolio to help them as they navigate the stages of growth. A notincens ourselves, we understand the passion, joy and challenges of building a business from des to bunch. We offer specialized guidance for blockchain and smart contract development."
             />
             <ApproachCard
               step="03"
@@ -168,7 +188,7 @@ const AboutUs = () => {
             </h2>
             <div className="w-24 h-1 bg-labs-orange mx-auto mb-8"></div>
           </motion.div>
-          
+
           <motion.div
             className="grid grid-cols-1 gap-8 md:grid-cols-3"
             variants={containerVariants}
@@ -186,7 +206,10 @@ const AboutUs = () => {
                   Vision
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  We act as a synergist between startups, investors, and service providers. We open new opportunities to a marketplace in a cross-border ecosystem. We maximize digital asset value through the Labs196 syndication economy.
+                  We act as a synergist between startups, investors, and service
+                  providers. We open new opportunities to a marketplace in a
+                  cross-border ecosystem. We maximize digital asset value
+                  through the Labs196 syndication economy.
                 </p>
               </Card>
             </motion.div>
@@ -201,7 +224,11 @@ const AboutUs = () => {
                   Mission
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Our ultimate goal is to operate companies across the world. We believe a single successful startup can generate enough excitement and inspiration to motivate and energize an entire country's entrepreneurial spirit to produce economic prosperity.
+                  Our ultimate goal is to operate companies across the world. We
+                  believe a single successful startup can generate enough
+                  excitement and inspiration to motivate and energize an entire
+                  country's entrepreneurial spirit to produce economic
+                  prosperity.
                 </p>
               </Card>
             </motion.div>
@@ -216,7 +243,11 @@ const AboutUs = () => {
                   Overview
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Our objective is to create a cohesive environment that transforms AI and Blockchain startups into successful businesses and enables them to reach their maximum potential through our marketplace. We invite you to join our mission.
+                  Our objective is to create a cohesive environment that
+                  transforms AI and Blockchain startups into successful
+                  businesses and enables them to reach their maximum potential
+                  through our marketplace. We invite you to join our mission to
+                  revolutionize how decentralized technologies shape the future.
                 </p>
               </Card>
             </motion.div>

@@ -54,7 +54,7 @@ const Home = () => {
       icon: "ri-global-line",
       title: "Market Access",
       description:
-        "Our goal is to help innovative startups and leadership teams reach their full potential and become the unicorns of tomorrow.",
+        "Our goal is to help innovative startups and leadership teams reach their full potential and become the unicorns of tomorrow. We have particular expertise in blockchain and emerging technology markets.",
       color: "text-labs-orange",
       bgColor: "bg-labs-orange/10",
     },
@@ -62,7 +62,7 @@ const Home = () => {
       icon: "ri-graduation-cap-line",
       title: "Advanced Training",
       description:
-        "Fill in the knowledge gaps and get hands-on advice and support from experts in areas such as finance, technology, marketing, management, HR, and more.",
+        "Fill in the knowledge gaps and get hands-on advice and support from experts in areas such as finance, technology, marketing, management, HR, and more. Special focus on blockchain development, smart contracts, and decentralized technologies.",
       color: "text-labs-orange",
       bgColor: "bg-labs-orange/10",
     },
@@ -70,7 +70,7 @@ const Home = () => {
       icon: "ri-lightbulb-line",
       title: "Learn New Skills",
       description:
-        "Our 3-M model provides startups with access to single-source funding, world-class mentorship from expert entrepreneurs and access to a global market through our extensive network.",
+        "Our 3-M model provides startups with access to single-source funding, world-class mentorship from expert entrepreneurs and access to a global market through our extensive network, including blockchain and cryptocurrency ecosystems.",
       color: "text-labs-orange",
       bgColor: "bg-labs-orange/10",
     },
@@ -78,7 +78,7 @@ const Home = () => {
       icon: "ri-gift-line",
       title: "Unique Perks",
       description:
-        "Get access to free and heavily-subsidised technology marketing and financial solutions from some of the world's top vendors.",
+        "Get access to free and heavily-subsidised technology marketing and financial solutions from some of the world's top vendors, including blockchain infrastructure providers and Web3 development tools.",
       color: "text-labs-orange",
       bgColor: "bg-labs-orange/10",
     },
@@ -123,7 +123,9 @@ const Home = () => {
             {carouselSlides.map((_, index) => (
               <button
                 key={index}
-                className={`h-2 w-2 rounded-full transition-all ${currentSlide === index ? "bg-white w-4" : "bg-white/50"}`}
+                className={`h-2 w-2 rounded-full transition-all ${
+                  currentSlide === index ? "bg-white w-4" : "bg-white/50"
+                }`}
                 onClick={() => api?.scrollTo(index)}
               />
             ))}
@@ -148,14 +150,16 @@ const Home = () => {
               Welcome to LABS196, headquartered in Sugar Land, Texas. We stand
               as a beacon of innovation within the venture capital investment
               landscape, committed to reshaping the trajectory of startups
-              poised for exceptional growth.
+              poised for exceptional growth, with a particular focus on
+              blockchain and emerging technologies.
             </p>
             <p>
               At LABS196, we recognize the potential of startups with unicorn
               status in the making. Our Accelerator Program is meticulously
               crafted to provide unparalleled support to such ventures and their
               exemplary teams, guiding them from concept refinement to investor
-              readiness with precision and expertise.
+              readiness with precision and expertise, especially in the rapidly
+              evolving blockchain space.
             </p>
             <p>
               Within our Advanced Training sessions, startups are afforded the
@@ -163,14 +167,17 @@ const Home = () => {
               seasoned professionals. From bridging knowledge gaps to receiving
               bespoke guidance in pivotal areas such as finance, technology,
               marketing, and human resources, our mentorship ensures
-              comprehensive development.
+              comprehensive development. We offer specialized tracks for
+              blockchain development, smart contract programming, and
+              decentralized application creation.
             </p>
             <p>
               However, our commitment extends far beyond mere guidance. Through
               our 3-M model, startups gain access to a trifecta of invaluable
               resources: robust financial backing, unparalleled mentorship from
               industry luminaries, and a gateway to global markets facilitated
-              by our extensive network.
+              by our extensive network, including key partnerships in the
+              blockchain and cryptocurrency ecosystem.
             </p>
             <p>
               Moreover, LABS196 extends exclusive privileges to its affiliated
@@ -200,7 +207,8 @@ const Home = () => {
               industry. Our accelerator program is designed to support startups
               with unicorn potential due to their innovative ideas and
               exceptional team to get investor-ready and launch their project to
-              the moon.
+              the moon. We're particularly excited about blockchain and AI
+              innovations that are reshaping the future.
             </p>
           </div>
 
@@ -259,7 +267,8 @@ const Home = () => {
               global investor network, as well as mentorship from international
               leaders and service providers within key industries, including
               legal, IT, accounting, human resources, public relations, and
-              more.
+              more. We have specialized connections in the blockchain and
+              cryptocurrency space.
             </p>
             <p className="mx-auto mt-4 max-w-2xl text-lg">
               Each startup can send between 1-3 leadership team members to join
